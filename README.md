@@ -1,4 +1,4 @@
-docker-oldgit
+docker-oldgit [![Docker Build Status](https://img.shields.io/docker/build/iamdanfox/oldgit.svg)]()
 =============
 
 Dockerfile which builds git 1.7.1 from source.
