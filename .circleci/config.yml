@@ -11,3 +11,9 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run: |
+          cd centos-7
+          TAG=latest
+          docker build -t iamdanfox/oldgit:TAG .
