@@ -5,15 +5,7 @@ jobs:
       - image: docker:17.05.0-ce-git
     steps:
       - checkout
-      - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
-          name: Print the Current Time
-          command: date
-      - setup_remote_docker:
-          docker_layer_caching: true
+      - setup_remote_docker
       - run: |
-          cd centos-7
           TAG=latest
           docker build -t iamdanfox/oldgit:TAG .
