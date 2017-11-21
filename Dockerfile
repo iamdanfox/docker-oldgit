@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:6
 
 # Dependencies from https://git-scm.com/book/en/v1/Getting-Started-Installing-Git#Installing-from-Source
 RUN yum install -y \

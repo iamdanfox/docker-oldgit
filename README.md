@@ -1,7 +1,7 @@
 docker-oldgit [![Docker Build Status](https://img.shields.io/docker/build/iamdanfox/oldgit.svg)]()
 =============
 
-Dockerfile which builds git 1.7.1 from source on top of Centos 7.  Three layers, roughly 135 MB in total.
+Dockerfile which builds git 1.7.1 from source on top of Centos 6.  Three layers, roughly 135 MB in total.
 
 ```
 $ docker run iamdanfox/oldgit:latest git --version
