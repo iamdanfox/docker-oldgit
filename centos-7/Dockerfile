@@ -16,6 +16,5 @@ RUN curl -L -o source.tgz ${TGZ} && \
     cd /git-${VERSION} && \
     make prefix=/usr/local all && \
     make prefix=/usr/local install && \
-    rm -rf /git-${VERSION}
-
-RUN git --version
+    rm -rf /git-${VERSION} && \
+    git --version
